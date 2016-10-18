@@ -1,10 +1,10 @@
 {
-  "name": "jenkins-neo-theme",
+  "name": "jenkins-neo2-theme",
   "version": "0.1.0",
   "description": "A modern theme for Jenkins - based on jenkins-material-theme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aarjithn/jenkins-neo-theme"
+    "url": "https://github.com/TobiX/jenkins-neo2-theme"
   },
   "scripts": {
     "test": "grunt"
@@ -14,11 +14,12 @@
     "clean design",
     "jenkins"
   ],
-  "author": "Aarjith Nandakumar",
+  "author": "Tobias Gruetzmacher",
   "contributors": [
     "Afonso F",
     "David Porter",
-    "Brady Vitrano"
+    "Brady Vitrano",
+    "Aarjith Nandakumar"
   ],
   "license": "MIT",
   "devDependencies": {

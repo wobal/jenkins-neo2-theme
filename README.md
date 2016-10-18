@@ -1,19 +1,21 @@
-# jenkins-neo-theme
+# jenkins-neo2-theme
+
 Beautify your Jenkins with the a modern flat theme!
 
-Website: http://jenkins-contrib-themes.github.io/jenkins-neo-theme
+<!-- Website: http://jenkins-contrib-themes.github.io/jenkins-neo2-theme -->
 
-So you love **Jenkins** but hate its ugly user interface and icons... Me too! Introducing **Jenkins Neo Theme**.
+This started as a fork to **jenkins-neo-theme**, which itself started as a fork
+to the **jenkins-material-theme**, but was developed further to work correctly
+with modern versions of Jenkins.
 
-This started as a fork to **jenkins-material-theme**, but changed mostly to use a flat and minimalistic design.
  
 ## Features
-* Just one small css file (35K)
+* Just one  css file
 * Embed minified SVG images
 * Multiple ways to install
 
-## Screenshots
-![Screen 1](screens/screen1.png)   ![Screen 2](screens/screen2.png)   ![Screen 3](screens/screen3.png)    ![Screen 4](screens/screen4.png)
+<!-- ## Screenshots
+![Screen 1](screens/screen1.png)   ![Screen 2](screens/screen2.png)   ![Screen 3](screens/screen3.png)    ![Screen 4](screens/screen4.png) -->
 
 
 ## Installation 
@@ -22,37 +24,37 @@ This started as a fork to **jenkins-material-theme**, but changed mostly to use 
 
 1. Install [Jenkins Simple Theme Plugin][simple]
 
-1. Click `Manage Jenkins`
+2. Click `Manage Jenkins`
 
-1. Click `Configure System` and scroll down to `Theme`
+3. Click `Configure System` and scroll down to `Theme`
 
-1. Specify the URL for `http://jenkins-contrib-themes.github.io/jenkins-neo-theme/dist/neo-light.css`.
+4. Specify the URL for `http://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css`.
 
-1. Click `Save`
+5. Click `Save`
 
 
 ### Using your Jenkins Hosting
 
-1. Upload the file `http://jenkins-contrib-themes.github.io/jenkins-neo-theme/dist/neo-light.css` to your web server
+1. Upload the file `http://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css` to your web server
 
-1. Follow the steps of the previous method using your uploaded file as URL in step 4
+2. Follow the steps of the previous method using your uploaded file as URL in step 4
 
 
 ### Using Stylish (only you will be able to see the awesome theme)
 
 1. Install the [Stylish Chrome extension][stylish]
 
-1. Copy the content of the file `http://jenkins-contrib-themes.github.io/jenkins-neo-theme/dist/neo-light.css`
+2. Copy the content of the file `http://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css`
 
-1. Go to Stylish options and click in `Write new style`
+3. Go to Stylish options and click in `Write new style`
 
-1. Paste the theme css in the code box
+4. Paste the theme css in the code box
 
-1. Click in `Specify` and set your jenkins domain
+5. Click in `Specify` and set your jenkins domain
 
-1. Click in `Save`
+6. Click in `Save`
 
-1. Go to your Jenkins website and enable the theme in the Stylish Chrome toolbar icon
+7. Go to your Jenkins website and enable the theme in the Stylish Chrome toolbar icon
 
 
 ## Development
@@ -71,21 +73,22 @@ This will generate the following file:
 ** Note: Theme neo-dark is WIP **
 
 ## Compatibility
-- Simple Theme plugin 0.3
-- Jenkins 1.636
-- Firefox 3.5+
-- Chrome 4+
-- Safari 4+
-- Opera 15+
-- Microsoft IE11 and Edge
 
+- Simple Theme plugin 0.3
+- Jenkins 2.7
+- Firefox
+- Chrome
+- Microsoft IE11 and Edge
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
 
 ## License
-http://aarjithn.mit-license.org/
+
+MIT License
 
 ##Thanks to
+
+- [Jenkins neo theme][neo] for the inspiration and original work
 - [Jenkins material theme][material] for the inspiration and original work
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
 - [Google][google] for the the material design inspiration and the icons
@@ -94,6 +97,7 @@ http://aarjithn.mit-license.org/
 - [canon-jenkins][canon-jenkins] for the base theme
 - [@Heldroe][heldroe] for Firefox and Microsoft support
 
+[neo]: https://github.com/jenkins-contrib-themes/jenkins-neo-theme
 [material]: https://github.com/afonsof/jenkins-material-theme
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
