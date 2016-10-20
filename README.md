@@ -1,4 +1,4 @@
-# jenkins-neo2-theme
+# Jenkins Neo2 Theme
 
 Beautify your Jenkins with the a modern flat theme!
 
