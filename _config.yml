@@ -1,0 +1,13 @@
+# Setup
+title:        Jenkins Neo2 Theme
+tagline:      Beautify your Jenkins with the a modern flat theme!
+github_url:   https://github.com/TobiX/jenkins-neo2-theme
+
+# About/contact
+author:
+  name:       Tobias Gruetzmacher
+  url:        https://github.com/TobiX 
+
+
+#Others
+markdown: kramdown
