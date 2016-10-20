@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- 6
+before_script:
+- npm install grunt-cli -g
+after_success:
+- if [ -e .github/deploy_key ]; then .github/deploy.sh; fi
+before_install:
+- openssl aes-256-cbc -K $encrypted_815954d41479_key -iv $encrypted_815954d41479_iv
+  -in .github/deploy_key.enc -out .github/deploy_key -d
