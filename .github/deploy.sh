@@ -12,6 +12,7 @@ chmod 600 ~/.ssh/id_rsa
 git clone --depth=10 --branch=gh-pages git@github.com:TobiX/jenkins-neo2-theme.git $P
 
 rsync -r --del --verbose ../dist/* $P/dist/
+cp ../README.md $P/index.md
 
 cd $P
 
