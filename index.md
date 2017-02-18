@@ -1,8 +1,8 @@
----
-layout: default
----
+# Jenkins Neo2 Theme
 
 Beautify your Jenkins with the a modern flat theme!
+
+Website: https://tobix.github.io/jenkins-neo2-theme
 
 This started as a fork to **jenkins-neo-theme**, which itself started as a fork
 to the **jenkins-material-theme**, but was developed further to work correctly
@@ -10,7 +10,8 @@ with modern versions of Jenkins.
 
  
 ## Features
-* Just one  css file
+
+* Just one css file
 * Embed minified SVG images
 * Multiple ways to install
 
@@ -35,26 +36,12 @@ with modern versions of Jenkins.
 
 ### Using your Jenkins Hosting
 
-1. Upload the file `https://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css` to your web server
+1. Copy the file
+   `https://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css` to the
+   directory `userContent` in your `JENKINS_HOME`
 
-2. Follow the steps of the previous method using your uploaded file as URL in step 4
-
-
-### Using Stylish (only you will be able to see the awesome theme)
-
-1. Install the [Stylish Chrome extension][stylish]
-
-2. Copy the content of the file `https://tobix.github.io/jenkins-neo2-theme/dist/neo-light.css`
-
-3. Go to Stylish options and click in `Write new style`
-
-4. Paste the theme css in the code box
-
-5. Click in `Specify` and set your jenkins domain
-
-6. Click in `Save`
-
-7. Go to your Jenkins website and enable the theme in the Stylish Chrome toolbar icon
+2. Follow the steps of the previous method and use `/userContent/neo-light.css`
+   as the URL.
 
 
 ## Development
@@ -67,6 +54,7 @@ grunt
 ```
 
 This will generate the following file:
+
 - dist/neo-light.css
 - dist/neo-dark.css
 
@@ -86,14 +74,13 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 
 MIT License
 
-## Thanks to
+##Thanks to
 
 - [Jenkins neo theme][neo] for the inspiration and original work
 - [Jenkins material theme][material] for the inspiration and original work
 - [Simple Theme Plugin][simple] for the Simple Theme plugin
 - [Google][google] for the the material design inspiration and the icons
 - [Material Design Icons][material-design-icons] for some extra icons
-- [Stylish][stylish] for making the test of new versions easy
 - [canon-jenkins][canon-jenkins] for the base theme
 - [@Heldroe][heldroe] for Firefox and Microsoft support
 
@@ -102,7 +89,5 @@ MIT License
 [simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
 [material-design-icons]: https://materialdesignicons.com/
-[stylish]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
 [canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
 [heldroe]: https://github.com/Heldroe
-
