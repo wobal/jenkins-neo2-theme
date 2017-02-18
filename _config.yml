@@ -6,8 +6,6 @@ github_url:   https://github.com/TobiX/jenkins-neo2-theme
 # About/contact
 author:
   name:       Tobias Gruetzmacher
-  url:        https://github.com/TobiX 
+  url:        https://github.com/TobiX
 
-
-#Others
-markdown: kramdown
+theme: jekyll-theme-cayman
