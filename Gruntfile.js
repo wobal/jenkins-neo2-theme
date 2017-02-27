@@ -115,7 +115,7 @@ module.exports = function (grunt) {
                 ]
             },
             dist: {
-                src: 'dist/material*.css'
+                src: 'dist/neo-*.css'
             }
         },
 
