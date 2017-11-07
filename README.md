@@ -1,5 +1,7 @@
 # Jenkins Neo2 Theme
 
+[![Build Status](https://travis-ci.org/TobiX/jenkins-neo2-theme.svg?branch=master)](https://travis-ci.org/TobiX/jenkins-neo2-theme)
+
 Beautify your Jenkins with the a modern flat theme!
 
 Website: https://tobix.github.io/jenkins-neo2-theme
@@ -58,7 +60,7 @@ This will generate the following file:
 - dist/neo-light.css
 - dist/neo-dark.css
 
-** Note: Theme neo-dark is WIP **
+**Note: Theme neo-dark is WIP**
 
 ## Compatibility
 
@@ -74,7 +76,7 @@ If you are experiencing issues please let me know! Also, feel free to contribute
 
 MIT License
 
-##Thanks to
+## Thanks to
 
 - [Jenkins neo theme][neo] for the inspiration and original work
 - [Jenkins material theme][material] for the inspiration and original work
