@@ -2,7 +2,7 @@
 @import '../node_modules/jenkins-core-theme/less/images';
 @import '../node_modules/jenkins-core-theme/less/codemirror';
 @import 'variables';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 
 // Only match the same elements which are also present in Jenkins' style.css
@@ -314,7 +314,7 @@ td {
 
 .console-output, .console-output * {
   position: relative;
-  font-family: @font-console, Courier, monospace !important;
+  font-family: @font-console, monospace !important;
   background: @console-black;
   color: @console-white;
   cursor: text;
@@ -328,8 +328,8 @@ td {
   }
 }
 
-.ace_content, .ace_content * {
-  font-family:  @font-console, Courier, monospace !important;
+.ace_editor, .ace_editor * {
+  font-family:  @font-console, monospace !important;
 }
 
 .jenkins_ver:after {
