@@ -3,6 +3,7 @@ node_js:
 - 6
 before_script:
 - npm install grunt-cli -g
+- .github/patch-version.sh
 after_success:
 - if [ -e .github/deploy_key ]; then .github/deploy.sh; fi
 before_install:
