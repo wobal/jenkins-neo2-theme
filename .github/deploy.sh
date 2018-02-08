@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -ue
+set -e
 
 cd "$(dirname "$0")"
 P="$(mktemp -d)"
@@ -24,5 +24,8 @@ git config user.name 'Travis-CI Website Bot'
 git config push.default simple
 
 git add -A .
-git commit -a -m "Update website from commit $TRAVIS_COMMIT"
-[ -e deploy_key ] && git push origin HEAD:gh-pages
+if [ "$TRAVIS_COMMIT" ]
+then
+	git commit -a -m "Update website from commit $TRAVIS_COMMIT"
+	git push origin HEAD:gh-pages
+fi
