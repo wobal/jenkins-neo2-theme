@@ -1,20 +1,20 @@
 #!/bin/sh
-
 set -e
 
-cd "$(dirname "$0")"
 P="$(mktemp -d)"
 
-if [ -e deploy_key ]
+if [ "$encrypted_815954d41479_key" ]
 then
-	cp deploy_key ~/.ssh/id_rsa
-	chmod 600 ~/.ssh/id_rsa
+	openssl aes-256-cbc -K $encrypted_815954d41479_key -iv $encrypted_815954d41479_iv \
+	    -in .github/deploy_key.enc -out .github/deploy_key -d
+	chmod 600 .github/deploy_key
+	ssh-add .github/deploy_key
 fi
 
 [ -d $P ] && rm -Rfv $P
-git clone --depth=10 --branch=gh-pages git@github.com:TobiX/jenkins-neo2-theme.git $P
+git clone --depth=10 --branch=gh-pages git@github.com:${TRAVIS_REPO_SLUG}.git $P
 
-rsync -r --del --verbose --exclude node_modules --exclude less ../* $P/
+rsync -r --del --verbose --exclude node_modules --exclude less * $P/
 mv $P/README.md $P/index.md
 
 cd $P
