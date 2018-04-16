@@ -5,6 +5,7 @@ P="$(mktemp -d)"
 
 if [ "$encrypted_815954d41479_key" ]
 then
+	eval "$(ssh-agent -s)"
 	openssl aes-256-cbc -K $encrypted_815954d41479_key -iv $encrypted_815954d41479_iv \
 	    -in .github/deploy_key.enc -out .github/deploy_key -d
 	chmod 600 .github/deploy_key

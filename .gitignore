@@ -1,8 +1,8 @@
-.DS_Store
-.idea/
-build
-node_modules/
-.vagrant/
-.sass-cache/
-_site/
-dist/
+/.DS_Store
+/.github/deploy_key
+/.idea/
+/.sass-cache/
+/.vagrant/
+/build
+/dist/
+/node_modules/
