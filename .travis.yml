@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-- 9
+- 'lts/*'
 before_script:
-- npm install grunt-cli -g
 - .github/patch-version.sh
+cache: yarn
+dist: xenial
 # Push site to gh-pages branch
 deploy:
   - provider: script
