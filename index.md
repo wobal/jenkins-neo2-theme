@@ -52,11 +52,11 @@ with modern versions of Jenkins.
 
 ## Development
 
-CSS file are minified and compressed with Grunt. To prepare the environment:
+CSS file are minified and compressed with Grunt. If you have Node & yarn
+installed, you can build everything with:
 
 ```
-npm install
-grunt
+yarn test
 ```
 
 This will generate the following file:
