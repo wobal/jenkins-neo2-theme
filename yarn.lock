@@ -2245,7 +2245,7 @@ isstream@~0.1.2:
 
 jenkins-core-theme@TobiX/jenkins-core-theme:
   version "1.1.42"
-  resolved "https://codeload.github.com/TobiX/jenkins-core-theme/tar.gz/d193307af914ec2f63eaf4bb426cac165ccc98ae"
+  resolved "https://codeload.github.com/TobiX/jenkins-core-theme/tar.gz/c1753b453b7a97ee74ad25ca816bb0881391a9b8"
 
 jpegtran-bin@^3.0.0:
   version "3.2.0"
