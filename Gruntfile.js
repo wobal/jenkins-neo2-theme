@@ -13,12 +13,6 @@ module.exports = function (grunt) {
         {src: ['dist/neo-dark.css'], dest: 'dist/neo-dark.css'}
     ];
 
-    var cssMinFiles = {
-        'dist/neo-light.css': ['dist/neo-light.css'],
-        'dist/neo-dark.css': ['dist/neo-dark.css']
-    };
-
-
     grunt.initConfig({
         clean: {
             dist: {
@@ -81,8 +75,12 @@ module.exports = function (grunt) {
 
         less: {
             dist: {
-                files: lessFiles
-            }
+                files: lessFiles,
+                options: {
+                    ieCompat: false,
+                    sourceMap: true,
+                },
+            },
         },
 
         replace: {
@@ -96,12 +94,6 @@ module.exports = function (grunt) {
                     ]
                 },
                 files: replaceFiles
-            }
-        },
-
-        cssmin: {
-            minify: {
-                files: cssMinFiles
             }
         },
 
@@ -143,7 +135,7 @@ module.exports = function (grunt) {
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'imagemin', 'less', 'replace', 'cssmin', 'postcss']);
+    grunt.registerTask('default', ['clean', 'imagemin', 'less', 'replace', 'postcss']);
     grunt.registerTask('test', ['default', 'fileExists']);
 
 
