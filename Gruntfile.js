@@ -74,6 +74,7 @@ module.exports = function (grunt) {
                 options: {
                     ieCompat: false,
                     sourceMap: true,
+                    sourceMapBasepath: 'dist/',
                     modifyVars: {
                         version: '"' + pkg.version + '"'
                     },
@@ -83,7 +84,7 @@ module.exports = function (grunt) {
 
         postcss: {
             options: {
-                map: false,
+                map: true,
                 processors: [
                     require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
                     require('postcss-encode-base64-inlined-images'),
