@@ -109,34 +109,9 @@ module.exports = function (grunt) {
             dist: {
                 src: 'dist/neo-*.css'
             }
-        },
-
-        imageEmbed: {
-            light: {
-                src: ["dist/neo-light.css"],
-                dest: "dist/neo-light.css",
-                options: {
-                    deleteAfterEncoding: false
-                }
-            },
-            dark: {
-                src: ["dist/neo-dark.css"],
-                dest: "dist/neo-dark.css",
-                options: {
-                    deleteAfterEncoding: false
-                }
-            }
-        },
-
-        fileExists: {
-            scripts: Object.keys(lessFiles)
         }
-
     });
 
-    // Default task(s).
+    // Default task
     grunt.registerTask('default', ['clean', 'imagemin', 'less', 'replace', 'postcss']);
-    grunt.registerTask('test', ['default', 'fileExists']);
-
-
 };
