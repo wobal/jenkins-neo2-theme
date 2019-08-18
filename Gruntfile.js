@@ -15,59 +15,6 @@ module.exports = function (grunt) {
             }
         },
 
-        imagemin: {
-            dynamic: {
-                options: {
-                    svgoPlugins: [{
-                        removeDoctype: true,
-                        removeXMLProcInst: true,
-                        removeComments: true,
-                        removeMetadata: true,
-                        removeTitle: true,
-                        removeDesc: true,
-                        removeUselessDefs: true,
-                        removeEditorsNSData: true,
-                        removeEmptyAttrs: true,
-                        removeHiddenElems: true,
-                        removeEmptyText: true,
-                        removeEmptyContainers: true,
-                        removeViewBox: true,
-                        cleanUpEnableBackground: true,
-                        minifyStyles: true,
-                        convertStyleToAttrs: true,
-                        convertColors: true,
-                        convertPathData: true,
-                        convertTransform: true,
-                        removeUnknownsAndDefaults: true,
-                        removeNonInheritableGroupAttrs: true,
-                        removeUselessStrokeAndFill: true,
-                        removeUnusedNS: true,
-                        cleanupIDs: true,
-                        cleanupNumericValues: true,
-                        moveElemsAttrsToGroup: true,
-                        moveGroupAttrsToElems: true,
-                        collapseGroups: true,
-                        removeRasterImages: true,
-                        mergePaths: true,
-                        convertShapeToPath: true,
-                        sortAttrs: true,
-                        transformsWithOnePath: true,
-                        removeDimensions: true,
-                        removeAttrs: true,
-                        addClassesToSVGElement: true,
-                        removeStyleElement: true
-                    }]
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'node_modules/jenkins-core-theme/images/',
-                    src: ['**/*.svg'],
-                    dest: 'node_modules/jenkins-core-theme/images/'
-                }]
-            }
-
-        },
-
         less: {
             dist: {
                 files: lessFiles,
@@ -87,8 +34,18 @@ module.exports = function (grunt) {
                 map: true,
                 processors: [
                     require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-                    require('cssnano')() // minify the result
-                ]
+                    require('cssnano')({
+                        preset: ['default', {
+                            svgo: {
+                                plugins: [{
+                                    removeRasterImages: true,
+                                    sortAttrs: true,
+                                    removeStyleElement: true,
+                                }],
+                            },
+                        }],
+                    }),
+                ],
             },
             dist: {
                 src: 'dist/neo-*.css'
@@ -97,7 +54,7 @@ module.exports = function (grunt) {
     });
 
     // Default task
-    grunt.registerTask('default', ['clean', 'imagemin', 'less', 'postcss']);
+    grunt.registerTask('default', ['clean', 'less', 'postcss']);
 };
 
 // vim: set ts=4 sw=4 et:
