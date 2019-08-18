@@ -4,7 +4,6 @@
 @import 'variables';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-
 // Only match the same elements which are also present in Jenkins' style.css
 body, table, form, input, td, th, p, textarea, select {
   font-family: @font-primary, sans-serif;
@@ -339,7 +338,7 @@ td {
 
 .jenkins_ver:after {
   margin-left: 15px;
-  content: 'neo2-theme @@version'
+  content: 'neo2-theme @{version}'
 }
 
 [style^="color:gray"] {

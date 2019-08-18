@@ -8,11 +8,6 @@ module.exports = function (grunt) {
         "dist/neo-dark.css": "less/dark.less",
     };
 
-    var replaceFiles = [
-        {src: ['dist/neo-light.css'], dest: 'dist/neo-light.css'},
-        {src: ['dist/neo-dark.css'], dest: 'dist/neo-dark.css'}
-    ];
-
     grunt.initConfig({
         clean: {
             dist: {
@@ -79,22 +74,11 @@ module.exports = function (grunt) {
                 options: {
                     ieCompat: false,
                     sourceMap: true,
+                    modifyVars: {
+                        version: '"' + pkg.version + '"'
+                    },
                 },
             },
-        },
-
-        replace: {
-            dist: {
-                options: {
-                    patterns: [
-                        {
-                            match: 'version',
-                            replacement: pkg.version
-                        }
-                    ]
-                },
-                files: replaceFiles
-            }
         },
 
         postcss: {
@@ -113,5 +97,7 @@ module.exports = function (grunt) {
     });
 
     // Default task
-    grunt.registerTask('default', ['clean', 'imagemin', 'less', 'replace', 'postcss']);
+    grunt.registerTask('default', ['clean', 'imagemin', 'less', 'postcss']);
 };
+
+// vim: set ts=4 sw=4 et:
