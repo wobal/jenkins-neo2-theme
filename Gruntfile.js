@@ -87,7 +87,6 @@ module.exports = function (grunt) {
                 map: true,
                 processors: [
                     require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
-                    require('postcss-encode-base64-inlined-images'),
                     require('cssnano')() // minify the result
                 ]
             },
