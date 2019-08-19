@@ -27,6 +27,9 @@ with modern versions of Jenkins.
 
 ## Installation
 
+If you want to keep using an older release, replace `/dist/` in all URLs with
+an older version, for example `/v0.2.0/`.
+
 ### Using this GitHub page
 
 1. Install [Jenkins Simple Theme Plugin][simple]

@@ -12,3 +12,8 @@ deploy:
     script: .github/deploy.sh
     on:
       branch: master
+  - provider: script
+    skip_cleanup: true
+    script: .github/deploy.sh
+    on:
+      tags: true
