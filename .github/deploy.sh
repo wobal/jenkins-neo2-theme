@@ -3,13 +3,11 @@ set -e
 
 P="$(mktemp -d)"
 
-if [ "$encrypted_815954d41479_key" ]
+if [ "$encrypted_705a6cbe1eb1_key" ]
 then
 	eval "$(ssh-agent -s)"
 	openssl aes-256-cbc -K $encrypted_705a6cbe1eb1_key -iv $encrypted_705a6cbe1eb1_iv \
-	    -in .github/deploy_key.enc -out .github/deploy_key -d
-	chmod 600 .github/deploy_key
-	ssh-add .github/deploy_key
+	    -in .github/deploy_key.enc -d | ssh-add -
 fi
 
 [ -d $P ] && rm -Rfv $P
