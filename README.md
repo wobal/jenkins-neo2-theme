@@ -1,7 +1,7 @@
 # Jenkins Neo2 Theme
 
 ![license](https://img.shields.io/github/license/tobix/jenkins-neo2-theme.svg)
-![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
+![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)
 [![Build Status](https://travis-ci.com/TobiX/jenkins-neo2-theme.svg?branch=master)](https://travis-ci.com/TobiX/jenkins-neo2-theme)
 
 Beautify your Jenkins with the a modern flat theme!
@@ -95,7 +95,7 @@ MIT License
 
 [neo]: https://github.com/jenkins-contrib-themes/jenkins-neo-theme
 [material]: https://github.com/afonsof/jenkins-material-theme
-[simple]: https://wiki.jenkins-ci.org/display/JENKINS/Simple+Theme+Plugin
+[simple]: https://plugins.jenkins.io/simple-theme-plugin
 [google]: https://www.google.com/design/spec/material-design/introduction.html
 [material-design-icons]: https://materialdesignicons.com/
 [canon-jenkins]: https://github.com/rackerlabs/canon-jenkins
