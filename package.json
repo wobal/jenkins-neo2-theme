@@ -26,7 +26,7 @@
     "@lodder/grunt-postcss": "^2.0.1",
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",
-    "grunt": "^1.0.4",
+    "grunt": "^1.1.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-less": "^2.0.0",
     "jenkins-core-theme": "TobiX/jenkins-core-theme",
