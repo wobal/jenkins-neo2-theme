@@ -68,11 +68,12 @@ This will generate the following file:
 
 ## Compatibility
 
-- Simple Theme plugin 0.3
-- Jenkins 2.7
+- Current Simple Theme plugin
+- Current Jenkins LTS (older versions might still work, but compatibility isn't
+  guaranteed)
 - Firefox
 - Chrome
-- Microsoft IE11 and Edge
+- Microsoft IE11 and Edge (IE & Edge support isn't tested regularly)
 
 If you are experiencing issues please let me know! Also, feel free to contribute!
 
