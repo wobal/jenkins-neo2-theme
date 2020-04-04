@@ -5,7 +5,6 @@ module.exports = function (grunt) {
 
     var lessFiles = {
         "dist/neo-light.css": "less/style.less",
-        "dist/neo-dark.css": "less/dark.less",
     };
 
     grunt.initConfig({

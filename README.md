@@ -65,9 +65,6 @@ yarn test
 This will generate the following file:
 
 - dist/neo-light.css
-- dist/neo-dark.css
-
-**Note: Theme neo-dark is WIP**
 
 ## Compatibility
 
