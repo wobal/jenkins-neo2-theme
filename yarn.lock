@@ -2,15 +2,14 @@
 # yarn lockfile v1
 
 
-"@lodder/grunt-postcss@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@lodder/grunt-postcss/-/grunt-postcss-2.0.2.tgz#2815e178c154fc0d5597e9a1894a7f996966aab8"
-  integrity sha512-zWPI9w+6bUyVn2R3yDJhYfy19WJFNUeq4ZU4OPGdqxGkPOvkNMRLUorF9iuQXG2gKdUd3zQf78I2gnuspDDRVw==
+"@lodder/grunt-postcss@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@lodder/grunt-postcss/-/grunt-postcss-2.0.3.tgz#c3f7a8d45508457311245411955af569aa18b553"
+  integrity sha512-rPCesja8kJMpSuQx9jIaFM6QqE3B/CMiP0dlE7+QfRwZOolUKTqD6ESN9GI8jsqYF3da/fPNe3bo7mA2lSNBsw==
   dependencies:
     diff "^4.0.2"
-    kleur "^3.0.3"
     maxmin "^2.1.0"
-    postcss "^7.0.27"
+    postcss "^7.0.30"
 
 "@types/minimatch@^3.0.3":
   version "3.0.3"
@@ -1126,11 +1125,6 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-kleur@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
-  integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
-
 less@^3.0.4:
   version "3.11.1"
   resolved "https://registry.yarnpkg.com/less/-/less-3.11.1.tgz#c6bf08e39e02404fe6b307a3dfffafdc55bd36e2"
@@ -1800,10 +1794,10 @@ postcss-value-parser@^4.0.2, postcss-value-parser@^4.0.3:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.0.3.tgz#651ff4593aa9eda8d5d0d66593a2417aeaeb325d"
   integrity sha512-N7h4pG+Nnu5BEIzyeaaIYWs0LI5XC40OrRh5L60z0QjFsqGWcHcbkBvpe1WYpcIS9yQ8sOi/vIPt1ejQCrMVrg==
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.27:
-  version "7.0.27"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.27.tgz#cc67cdc6b0daa375105b7c424a85567345fc54d9"
-  integrity sha512-WuQETPMcW9Uf1/22HWUWP9lgsIC+KEHg2kozMflKjbeUtw9ujvFX6QmIfozaErDkmLWS9WEnEdEe6Uo9/BNTdQ==
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.27, postcss@^7.0.30:
+  version "7.0.30"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.30.tgz#cc9378beffe46a02cbc4506a0477d05fcea9a8e2"
+  integrity sha512-nu/0m+NtIzoubO+xdAlwZl/u5S5vi/y6BCsoL8D+8IxsD3XvBS8X4YEADNIVXKVuQvduiucnRv+vPIqj56EGMQ==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
