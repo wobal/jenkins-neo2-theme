@@ -42,6 +42,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
+          enable_jekyll: true
           destination_dir: dist
 
       - name: Get tag name
@@ -54,4 +55,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
+          enable_jekyll: true
           destination_dir: ${{ steps.tag.outputs.TAG_NAME }}
