@@ -1,8 +1,8 @@
 # Jenkins Neo2 Theme
 
 ![license](https://img.shields.io/github/license/tobix/jenkins-neo2-theme.svg)
-![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)
-[![Build Status](https://travis-ci.com/TobiX/jenkins-neo2-theme.svg?branch=master)](https://travis-ci.com/TobiX/jenkins-neo2-theme)
+![Maintenance](https://img.shields.io/maintenance/yes/2021.svg)
+[![Building CSS](https://github.com/TobiX/jenkins-neo2-theme/actions/workflows/build.yaml/badge.svg)](https://github.com/TobiX/jenkins-neo2-theme/actions/workflows/build.yaml)
 
 Beautify your Jenkins with the a modern flat theme!
 
