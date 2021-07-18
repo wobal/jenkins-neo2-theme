@@ -1199,7 +1199,7 @@ isstream@~0.1.2:
 
 jenkins-core-theme@TobiX/jenkins-core-theme:
   version "1.1.42"
-  resolved "https://codeload.github.com/TobiX/jenkins-core-theme/tar.gz/440c997b369f1742b5a59ca8a4d714bb4cf2a6d3"
+  resolved "https://codeload.github.com/TobiX/jenkins-core-theme/tar.gz/2b2624d6f4b0f5feefb1ed88299b82cffd3ffcef"
 
 js-yaml@^3.13.1, js-yaml@~3.14.0:
   version "3.14.0"
