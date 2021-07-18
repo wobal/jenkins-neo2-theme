@@ -26,6 +26,7 @@ jobs:
 
       - name: Build
         run: |
+          .github/patch-version.sh
           yarn --frozen-lockfile
           yarn test
 
