@@ -36,11 +36,18 @@ module.exports = function (grunt) {
                     require('cssnano')({
                         preset: ['default', {
                             svgo: {
-                                plugins: [{
-                                    removeRasterImages: true,
-                                    sortAttrs: true,
-                                    removeStyleElement: true,
-                                }],
+                                plugins: [
+                                    {
+                                        name: 'preset-default',
+                                        params: {
+                                            overrides: {
+                                                removeRasterImages: true,
+                                                sortAttrs: true,
+                                                removeStyleElement: true
+                                            },
+                                        },
+                                    },
+                                ],
                             },
                         }],
                     }),
